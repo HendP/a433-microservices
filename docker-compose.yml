@@ -6,10 +6,10 @@ services:
   # service 1 for mongodb
   item-db:
     # use image mongo:6.0 from docker hub
-    image: mongo:6.0
+    image: mongo:3.0
     # define volume
     volumes:
-      - item-mongodb-data:/data/db
+      - app-db:/data/db
     # define to make container restart if container dead when server restart
     restart: always
   # service 2 for application item-todo
@@ -27,4 +27,4 @@ services:
 
 # define volume
 volumes:
-  item-mongodb-data:
+  app-db:

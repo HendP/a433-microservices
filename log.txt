@@ -1,9 +1,30 @@
 # logs when executed "docker compose up -d"
+[+] Running 8/13
+ ⠴ item-db Pulling                                                                                                                                                                     97.5s
+   ⠿ 9e518726c72a Pull complete                                                                                                                                                        14.8s
+   ⠿ 5bec5585393f Pull complete                                                                                                                                                        14.9s
+   ⠿ 67b43c55e1d0 Pull complete                                                                                                                                                        15.0s
+   ⠿ ac73d29bb1af Pull complete                                                                                                                                                        15.3s
+   ⠿ 5f055f855756 Pull complete                                                                                                                                                        15.4s
+[+] Running 13/13 Pull complete
+ ⠿ item-db Pulled                                                                                                                                               104.0s
+   ⠿ 9e518726c72a Pull complete                                                                                                                                  14.8s
+   ⠿ 5bec5585393f Pull complete                                                                                                                                  14.9s
+   ⠿ 67b43c55e1d0 Pull complete                                                                                                                                  15.0s
+   ⠿ ac73d29bb1af Pull complete                                                                                                                                  15.3s
+   ⠿ 5f055f855756 Pull complete                                                                                                                                  15.4s
+   ⠿ 5ff164565c7e Pull complete                                                                                                                                  15.5s
+   ⠿ 14cac0308fdb Pull complete                                                                                                                                  15.6s
+   ⠿ d64ca7fda324 Pull complete                                                                                                                                  15.7s
+   ⠿ a785a68ac06d Pull complete                                                                                                                                  96.4s
+   ⠿ 749ebc08962c Pull complete                                                                                                                                  96.4s
+   ⠿ 6941183827c4 Pull complete                                                                                                                                  96.5s
+   ⠿ 4fe0aacd6337 Pull complete                                                                                                                                  96.6s
 [+] Running 4/4
- ⠿ Network a433-microservices_default             Created                                                                                     0.1s
- ⠿ Volume "a433-microservices_item-mongodb-data"  Created                                                                                     0.0s
- ⠿ Container a433-microservices-item-db-1         Started                                                                                     0.7s
- ⠿ Container a433-microservices-item-app-1        Started                                                                                     1.2s
+ ⠿ Network a433-microservices_default       Created                                                                                                               0.1s
+ ⠿ Volume "a433-microservices_app-db"       Created                                                                                                               0.0s
+ ⠿ Container a433-microservices-item-db-1   Started                                                                                                               0.8s
+ ⠿ Container a433-microservices-item-app-1  Started                                                                                                               1.5s                                                                                  1.2s
 
 
 # logs when executed "docker compose logs -t -f --tail="all""
