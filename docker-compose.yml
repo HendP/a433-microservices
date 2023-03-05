@@ -1,0 +1,30 @@
+# define docker-compose version
+version: "3.7"
+
+# define services
+services:
+  # service 1 for mongodb
+  item-db:
+    # use image mongo:6.0 from docker hub
+    image: mongo:6.0
+    # define volume
+    volumes:
+      - item-mongodb-data:/data/db
+    # define to make container restart if container dead when server restart
+    restart: always
+  # service 2 for application item-todo
+  item-app:
+    # use image from my docker hub repository
+    image: hendpermana/item-app:v1
+    # define port mapping in the host with 80
+    ports:
+      - 80:8080
+    # define to make container restart if container dead when server restart
+    restart: always
+    # wait for item-db start before run this service
+    depends_on:
+      - item-db    
+
+# define volume
+volumes:
+  item-mongodb-data:
